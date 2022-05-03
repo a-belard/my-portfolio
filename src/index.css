@@ -62,7 +62,7 @@
 }
 
 body {
-  margin: 0;
+  background-color: var(--primary-2);
   font-family: 'Fira Code',-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
