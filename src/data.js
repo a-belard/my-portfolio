@@ -1,5 +1,5 @@
 export const my_data = {
-  firstName: "Ange Belard",
+  firstName: "ange-belard",
   surname: "Rutayisire",
   proffession: "> Front-end developer",
   github: "a-belard",

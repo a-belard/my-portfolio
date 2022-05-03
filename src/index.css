@@ -7,8 +7,7 @@
 :root {
   --primary-font: Fira Code, sans-serif;
   --primary-1: #01080E;
-  --primary-2: #011627;
-  --primary-3: #011627;
+  --primary-2: #011e36;
   --secondary-1: #607B96;
   --secondary-2: #3C9D93;
   --secondary-3: #4D5BCE;
@@ -17,7 +16,21 @@
   --accent-2: #43D9AD;
   --accent-3: #E99287;
   --accent-4: #C98BDF;
-  --lines-color: #1E2D3D;
+  --lines-color: #293a4d;
+}
+
+.primary-bg-2 {
+  background-color: var(--primary-2);
+}
+
+.secondary-1 {
+  color: #607B96;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .btn-primary {
@@ -60,4 +73,8 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+bold {
+  font: inherit
 }
