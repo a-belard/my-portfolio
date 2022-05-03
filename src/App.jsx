@@ -1,10 +1,17 @@
 import { useState } from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import * as actions from "./actions";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./views/Home";
 
 function App() {
-  return <div></div>;
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App;
