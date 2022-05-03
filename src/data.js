@@ -14,4 +14,13 @@ export const my_data = {
     gmail: "angebelard@gmail.com",
     phone: "+250780578131",
   },
+  interests: [
+    "coding",
+    "playing games",
+    "reading comics",
+    "listening to music",
+    "watching movies",
+    "editing photos and videos",
+    "hacking",
+  ],
 };
