@@ -4,6 +4,50 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --primary-font: Fira Code, sans-serif;
+  --primary-1: #01080E;
+  --primary-2: #011627;
+  --primary-3: #011627;
+  --secondary-1: #607B96;
+  --secondary-2: #3C9D93;
+  --secondary-3: #4D5BCE;
+  --secondary-4: #FFFFFF;
+  --accent-1: #FEA55F;
+  --accent-2: #43D9AD;
+  --accent-3: #E99287;
+  --accent-4: #C98BDF;
+  --lines-color: #1E2D3D;
+}
+
+.btn-primary {
+  color: var(--primary-1);
+  background-color: var(--accent-1);
+}
+
+.btn-primary:hover {
+  transition: background-color 0.5s;
+  background-color: #FFAC6B;
+}
+
+.btn-default {
+  color: var(--secondary-4);
+  background-color: #1C2B3A;
+}
+
+.btn-default:hover {
+  transition: background-color 0.5s;
+  background-color: #263B50;
+}
+
+.btn-ghost {
+  color: var(--secondary-4)
+}
+
+.btn-ghost:hover {
+  border: rgba(255, 255, 255, 0.5);
+}
+
 body {
   margin: 0;
   font-family: 'Fira Code',-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
