@@ -10,9 +10,11 @@ export default function () {
   const active = useSelector((store) => store.navigation);
   const navigateHandler = (navId) => dispatch(navActions.navigate(navId));
   return (
-    <nav className=" flex justify-between px-8 h-12 items-center text-xs secondary-1 primary-bg-2 font-bold">
-      <div className="flex gap-10 h-full">
-        <button>_{my_data.firstName}</button>
+    <nav className=" flex justify-between h-11 items-center text-xs secondary-1 primary-bg-2">
+      <div className="flex gap-9 h-full">
+        <button onClick={(e) => navigateHandler(0)} className="px-7">
+          _{my_data.firstName.toLowerCase().split(" ").join("-")}
+        </button>
         <div className=" flex ml-20 h-full">
           {navlinks &&
             navlinks.map((navlink, i) => (
@@ -21,7 +23,7 @@ export default function () {
                 onClick={(e) => navigateHandler(i)}
                 className={
                   (i === active ? "navlink-active" : "") +
-                  " h-full px-8 navlink"
+                  " h-full px-8 navlink hover:text-white"
                 }
               >
                 _{navlink}
@@ -30,7 +32,9 @@ export default function () {
         </div>
       </div>
       <div className="h-full">
-        <button className="h-full contact-me-btn pl-8">_contact-me</button>
+        <button className="h-full contact-me-btn px-7 border-left hover:text-white">
+          _contact-me
+        </button>
       </div>
     </nav>
   );
