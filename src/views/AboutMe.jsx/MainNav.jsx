@@ -1,0 +1,166 @@
+import { Resizable } from "re-resizable";
+import React from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { my_data } from "../../data";
+import contacts_panel_actions from "../../reducers/contacts_panel";
+import personalinfo_panel_actions from "../../reducers/personalinfo_panel";
+import education_panel_actions from "../../reducers/education_panel";
+import active_persInfo_actions from "../../reducers/active_personalInfo";
+import education_level_actions from "../../reducers/education_level";
+
+export default function MainNav() {
+  const contacts_panel_state = useSelector((state) => state.contacts_panel);
+  const personalinfo_panel_state = useSelector(
+    (state) => state.personalinfo_panel
+  );
+  const education_panel_state = useSelector((state) => state.education_panel);
+  const active_persInfo_state = useSelector((state) => state.active_persInfo);
+  const education_level_state = useSelector((state) => state.education_level);
+
+  const dispatch = useDispatch();
+  let closeOpenContactsPanel = (state) =>
+    dispatch(contacts_panel_actions.open(!contacts_panel_state));
+  let closeOpenPersonalinfoPanel = (state) =>
+    dispatch(personalinfo_panel_actions.open(!personalinfo_panel_state));
+  let closeOpenEducationPanel = (state) =>
+    dispatch(education_panel_actions.open(!education_panel_state));
+  let active_persInfo_handler = (newstate) =>
+    dispatch(active_persInfo_actions.setActive(newstate));
+  let active_educationLevel_handler = (newstate) =>
+    dispatch(education_level_actions.setActive(newstate));
+
+  return (
+    <Resizable
+      className="h-full border-right text-xs"
+      defaultSize={{ width: "208px" }}
+      minWidth={"180px"}
+      maxWidth={"220px"}
+      enable={{
+        top: false,
+        topLeft: false,
+        left: false,
+        right: true,
+        bottom: false,
+        bottomLeft: false,
+        bottomRight: false,
+        topRight: false,
+      }}
+    >
+      <button
+        className="w-full border-bottom text-left flex pl-3 h-11 items-center text-md text-white"
+        onClick={(e) => closeOpenPersonalinfoPanel(!personalinfo_panel_state)}
+      >
+        <i
+          className={
+            (personalinfo_panel_state
+              ? "ri-arrow-down-s-fill"
+              : "ri-arrow-right-s-fill") + " text-base mr-2"
+          }
+        ></i>
+        <span> personal-info</span>
+      </button>
+      <div
+        className={
+          (personalinfo_panel_state ? "block h-auto" : "hidden h-0") +
+          " flex flex-col pl-4 secondary-1 py-3 text-sm"
+        }
+      >
+        <button
+          className={
+            "flex items-center gap-1 hover:text-white hover:opacity-80 " +
+            (active_persInfo_state === 0 ? "secondary-4" : "")
+          }
+          onClick={(e) => active_persInfo_handler(0)}
+        >
+          <i className="ri-arrow-drop-right-line text-3xl"></i>
+          <i className="ri-folder-3-fill text-md -ml-1 mr-1 accent-3"></i>
+          <span>bio</span>
+        </button>
+        <button
+          className={
+            "flex items-center gap-1 hover:text-white hover:opacity-80 -mt-2 " +
+            (active_persInfo_state === 1 ? "secondary-4" : "")
+          }
+          onClick={(e) => active_persInfo_handler(1)}
+        >
+          <i className="ri-arrow-drop-right-line text-3xl"></i>
+          <i className="ri-folder-3-fill text-md -ml-1 mr-1 accent-2"></i>
+          <span>interests</span>
+        </button>
+        <button
+          className={
+            "flex items-center gap-1 -mt-2 hover:text-white hover:opacity-80 " +
+            (active_persInfo_state === 2 ? "secondary-4" : "")
+          }
+          onClick={(e) => closeOpenEducationPanel(education_panel_state)}
+        >
+          <i
+            className={
+              (education_panel_state
+                ? "ri-arrow-drop-down-line"
+                : "ri-arrow-drop-right-line") + " text-3xl"
+            }
+          ></i>
+          <i className="ri-folder-3-fill text-md -ml-1 mr-1 secondary-3"></i>
+          <span>education</span>
+        </button>
+        <div
+          className={
+            (education_panel_state ? "h-auto block" : "hidden h-0") +
+            " pl-7 secondary-1"
+          }
+        >
+          {my_data.education &&
+            my_data.education.map((education, i) => (
+              <button
+                key={i}
+                className={
+                  "hover:text-white hover:opacity-80 " +
+                  (education_level_state === i && active_persInfo_state === 2
+                    ? "secondary-4"
+                    : "")
+                }
+                onClick={(e) => {
+                  active_persInfo_handler(2);
+                  active_educationLevel_handler(i);
+                }}
+              >
+                <i className="ri-ball-pen-line"></i>
+                <span> {education.level}</span>
+              </button>
+            ))}
+        </div>
+      </div>
+      <button
+        className={
+          "w-full border-bottom text-left flex pl-3 h-11 items-center text-white " +
+          (personalinfo_panel_state ? "border-top" : "")
+        }
+        onClick={(e) => closeOpenContactsPanel(contacts_panel_state)}
+      >
+        <i
+          className={
+            (contacts_panel_state
+              ? "ri-arrow-down-s-fill"
+              : "ri-arrow-right-s-fill") + " text-base mr-2"
+          }
+        ></i>
+
+        <span> contacts</span>
+      </button>
+      <div
+        className={
+          (contacts_panel_state ? "block h-auto" : "hidden h-0") +
+          " flex flex-col pl-4 secondary-1 text-md py-3 gap-2"
+        }
+      >
+        <p className="flex items-center gap-2">
+          <i className="ri-mail-fill text-md"></i> angebelard@gmail.com
+        </p>
+        <p className="flex items-center gap-2">
+          <i className="ri-phone-fill text-md"></i> +250780578131
+        </p>
+      </div>
+    </Resizable>
+  );
+}
