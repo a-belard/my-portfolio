@@ -1,5 +1,8 @@
+import belix from "./assets/belix.png";
+
 export const my_data = {
-  firstName: "ange-belard",
+  firstName: "Ange Belard",
+  img: belix,
   surname: "Rutayisire",
   proffession: "> Front-end developer",
   github: "a-belard",
@@ -22,5 +25,45 @@ export const my_data = {
     "watching movies",
     "editing photos and videos",
     "hacking",
+  ],
+  education: [
+    {
+      level: "High School",
+      school: "Rwanda Coding Academy",
+      courses: [
+        "Fundamentals of programming (C)",
+        "C++",
+        "Python",
+        "Java",
+        "JavaScript",
+        "mySql",
+        "PostgreSQL",
+        "Node",
+        "MongoDB",
+        "Software Analysis and Design",
+        "Ethical hacking",
+        "Embedded systems",
+        "Advanced networking",
+        "DevOps",
+        "Php",
+        "Mobile development",
+        "English",
+        "Maths",
+        "Physics",
+      ],
+    },
+    {
+      level: "Ordinary level",
+      course: [
+        "ICT",
+        "Maths",
+        "Physics",
+        "Biology",
+        "Entrepreneurship",
+        "Chemistry",
+        "English",
+        "Literature",
+      ],
+    },
   ],
 };
