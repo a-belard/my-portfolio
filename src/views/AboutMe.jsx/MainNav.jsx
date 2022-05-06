@@ -33,7 +33,7 @@ export default function MainNav() {
     <Resizable
       className="h-full border-right text-xs"
       defaultSize={{ width: "208px" }}
-      minWidth={"180px"}
+      minWidth={"190px"}
       maxWidth={"220px"}
       enable={{
         top: false,
@@ -126,7 +126,10 @@ export default function MainNav() {
                 }}
               >
                 <i className="ri-ball-pen-line"></i>
-                <span> {education.level}</span>
+                <span>
+                  {" "}
+                  {education.level.toLowerCase().split(" ").join("-")}
+                </span>
               </button>
             ))}
         </div>
