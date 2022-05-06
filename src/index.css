@@ -16,8 +16,13 @@
   --accent-2: #43D9AD;
   --accent-3: #E99287;
   --accent-4: #C98BDF;
+  --accent-5: #e6db74;
   --lines-color: #293a4d;
   --secondary-white: #E5E9F0;
+}
+
+.accent-3-bg {
+  background-color: var(--accent-3);
 }
 
 .accent-2 {
@@ -26,6 +31,14 @@
 
 .accent-3 {
   color: var(--accent-3)
+}
+
+.accent-4 {
+  color: var(--accent-4)
+}
+
+.accent-5 {
+  color: var(--accent-5)
 }
 
 .secondary-1 {
