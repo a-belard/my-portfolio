@@ -6,7 +6,7 @@ import SideNav from "./SideNav";
 
 export default function () {
   return (
-    <main className="flex w-full h-full">
+    <main className="flex w-full" style={{ height: "90%" }}>
       <SideNav />
       <MainNav />
       <Editor />
