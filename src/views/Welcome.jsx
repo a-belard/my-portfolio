@@ -3,10 +3,17 @@ import bgBlurs from "../assets/bg-blurs.png";
 import MacImgWindow from "../components/MacWindow";
 import { my_data } from "../data";
 import "../styles/welcome.scss";
+import { motion } from "framer-motion";
 
 export default function Welcome() {
   return (
-    <div className="flex-1 flex justify-center items-center overflow-hidden m-auto w-8/12">
+    <motion.div
+      initial={{ scale: 0.8, opacity: 0 }}
+      animate={{ scale: 1, opacity: 1 }}
+      layout
+      transition={{ duration: 0.5 }}
+      className="flex-1 flex justify-center items-center overflow-hidden m-auto w-8/12"
+    >
       <div className="w-5/12 secondary-white">
         <p className=" text-xs">Hellooo 👋. I'm</p>
         <h4 className=" text-5xl mt-3">{my_data.firstName}</h4>
@@ -37,6 +44,6 @@ export default function Welcome() {
           className="w-full blurs scale-y-150 scale-x-110"
         />
       </div>
-    </div>
+    </motion.div>
   );
 }
