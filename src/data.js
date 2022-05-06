@@ -17,6 +17,7 @@ export const my_data = {
     gmail: "angebelard@gmail.com",
     phone: "+250780578131",
   },
+  bio: "React Enthusiast. I have 4 years of experience in software development, especially in web development with React.",
   interests: [
     "coding",
     "playing games",
