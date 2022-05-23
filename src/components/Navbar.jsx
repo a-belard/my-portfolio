@@ -32,7 +32,13 @@ export default function () {
         </div>
       </div>
       <div className="h-full">
-        <button className="h-full contact-me-btn px-7 border-left hover:text-white">
+        <button
+          onClick={(e) => navigateHandler(4)}
+          className={
+            (active === 4 ? "navlink-active" : "") +
+            " h-full contact-me-btn px-7 border-left hover:text-white"
+          }
+        >
           _contact-me
         </button>
       </div>
