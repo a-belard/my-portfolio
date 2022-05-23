@@ -17,12 +17,42 @@
   --accent-3: #E99287;
   --accent-4: #C98BDF;
   --accent-5: #e6db74;
+  --accent-6: dodgerblue;
   --lines-color: #293a4d;
   --secondary-white: #E5E9F0;
+  --input-bg: #011221;
+  --input-border: #1E2D3D;
+}
+.input-border {
+  border: 1px solid var(--input-border);
+  padding-left: 15px
+}
+
+.input-border:focus {
+  transition: .5s;
+  border: 1px solid var(--secondary-1);
+  outline: none;
+}
+
+.input-border:hover {
+  transition: .5s;
+  border: 1px solid var(--secondary-1);
+}
+
+.input-bg {
+  background-color: var(--input-bg);
+}
+
+.input-color {
+  color: var(--input-bg);
 }
 
 .accent-3-bg {
   background-color: var(--accent-3);
+}
+
+.accent-1 {
+  color: var(--accent-1)
 }
 
 .accent-2 {
@@ -39,6 +69,10 @@
 
 .accent-5 {
   color: var(--accent-5)
+}
+
+.accent-6 {
+  color : var(--accent-6)
 }
 
 .secondary-1 {
@@ -92,7 +126,7 @@
 }
 
 .btn-ghost {
-  color: var(--secondary-4)
+  color: var(--secondary-1)
 }
 
 .btn-ghost:hover {
@@ -129,6 +163,6 @@ code {
     monospace;
 }
 
-/* button {
-  font: inherit
-} */
+button:focus {
+  outline: none;
+}
