@@ -1,8 +1,18 @@
 import React from "react";
 import { my_data } from "../data";
 import "../styles/footer.scss";
+import moment from "moment";
 
 export default function Footer() {
+  const [time, settime] = React.useState(new Date());
+  React.useEffect(() => {
+    setInterval(() => {
+      settime(new Date());
+    }, 1000);
+
+    return () => {};
+  }, []);
+
   return (
     <footer className="absolute bottom-0 left-0 w-full flex justify-between px-0 h-8 items-center text-xs secondary-1 primary-bg-2">
       <div className="h-full flex items-center">
@@ -29,6 +39,7 @@ export default function Footer() {
           <i className="ri-facebook-fill text-md"></i>
         </a>
       </div>
+      <div>{moment(time).format("hh:mm:ss")}</div>
       <div className="flex h-full">
         <a
           href={my_data.links.github}
