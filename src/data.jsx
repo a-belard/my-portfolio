@@ -1,0 +1,143 @@
+import belix from "./assets/belix.png";
+
+export const my_data = {
+  firstName: "Ange Belard",
+  img: belix,
+  surname: "Rutayisire",
+  proffession: "> Front-end developer",
+  github: "a-belard",
+  links: {
+    github: "http://github.com/a-belard",
+    instagram: "https://www.instagram.com/belix_2.0/",
+    linkedin: "https://www.linkedin.com/in/ange-belard-r-b43552228/",
+    twitter: "https://twitter.com/BelixP",
+    facebook: "https://www.facebook.com/angebelard/",
+    dribbble: "https://dribbble.com/belix-design",
+  },
+  contacts: {
+    gmail: "angebelard@gmail.com",
+    phone: "+250780578131",
+  },
+  bio: (
+    <span>
+      React addict. <br /> I have {new Date().getFullYear() - 2019 + 1} years of
+      experience in software development.
+      <br />
+      Problem-solving, inventing and coding is more of an inner peace rather
+      than a feeling.
+    </span>
+  ),
+  interests: [
+    "coding",
+    "playing games",
+    "reading comics",
+    "listening to music",
+    "watching movies",
+    "editing photos and videos",
+    "hacking",
+  ],
+  languages: ["English", "Kinyarwanda", "French"],
+  education: [
+    {
+      level: "High School",
+      school: "Rwanda Coding Academy",
+      from: 2020,
+      to: 2023,
+      courses: [
+        "Web User Interface",
+        "Fundamentals of programming (C)",
+        "C++",
+        "Python",
+        "Java",
+        "JavaScript",
+        "mySql",
+        "Node & mySql",
+        "Software Analysis and Design",
+        "Ethical hacking",
+        "Embedded systems",
+        "Advanced networking",
+        "DevOps",
+        "Php",
+        "Mobile development",
+        "English",
+        "Maths",
+        "Physics",
+      ],
+    },
+    {
+      level: "Ordinary level",
+      school: "Byimana School of Sciences",
+      from: 2017,
+      to: 2019,
+      courses: [
+        "ICT",
+        "Maths",
+        "Physics",
+        "Biology",
+        "Entrepreneurship",
+        "Chemistry",
+        "Languages",
+        "Literature in English",
+      ],
+    },
+    {
+      level: "Primary School",
+      school:
+        "Kigali Christian School(2 years) + SOS Primary School Kigali H.G (4 years)",
+      from: 2011,
+      to: 2016,
+      courses: ["Elementary science", "Maths", "Languages", "Social studies"],
+    },
+    {
+      level: "Nursery School",
+      school: "Kigali Christian School",
+      from: 2008,
+      to: 2010,
+      courses: ["Nursery courses"],
+    },
+  ],
+  techs: [
+    { icon: "ri-reactjs-line", tech: "React" },
+    { icon: "ri-angularjs-fill", tech: "Angular" },
+    { icon: "ri-flutter-fill", tech: "Flutter" },
+  ],
+  projects: [
+    {
+      name: "CodeAMA",
+      desc: "CodeAma is the best way to connect beginner coders to well experienced programmers all over the globe.",
+      smallDesc: "Code Community to connect junior coders to seniors",
+      tech: ["Angular"],
+      gitLink: "https://github.com/CodeAma-Group/Codeama-Frontend",
+    },
+    {
+      name: "SparkCinema",
+      desc: "SparkCinema is a reliable streaming platform for Rwandan Movies.",
+      smallDesc: "A platform for streaming Rwandan Movies",
+      tech: ["React"],
+      gitLink: "https://github.com/Byiringiro-saad/SparkCinema-Front-End",
+    },
+    {
+      name: "DailyMoney",
+      desc: "An online business using Tron (Trx) as a payment medium. You get 3% (daily) of your investment.",
+      smallDesc: "Online business earning 3% daily of tron invested",
+      tech: ["React"],
+      gitLink: "https://github.com/a-belard/dailymoney",
+    },
+    {
+      name: "CovData",
+      desc: "CovData let you know and track covid 19 numbers across the world.",
+      smallDesc: "Know covid 19 numbers across the world",
+      tech: ["React"],
+      link: "https://covdata.netlify.app/",
+      gitLink: "https://gitlab.com/belix/covid_data",
+    },
+    {
+      name: "Inst-gram",
+      smallDesc: "Instagram clone built on MERN stack",
+      desc: "Instagram clone built on MERN stack - MongoDB, Express, React, NodJS.",
+      tech: ["React"],
+      link: "https://inst-gram.herokuapp.com/",
+      gitLink: "https://github.com/a-belard/instagram",
+    },
+  ],
+};
