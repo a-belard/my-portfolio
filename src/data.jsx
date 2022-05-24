@@ -18,6 +18,32 @@ export const my_data = {
     gmail: "angebelard@gmail.com",
     phone: "+250780578131",
   },
+  major_webdev_skills: [
+    {
+      skill: "Javascript + HTML + CSS",
+      level: 100,
+      icon: "vscode-icons:file-type-js",
+    },
+    { skill: "React", level: 97, icon: "vscode-icons:file-type-reactts" },
+    {
+      skill: "NodeJs + Express",
+      level: 90,
+      icon: "vscode-icons:file-type-node",
+    },
+    { skill: "Angular", level: 80, icon: "vscode-icons:file-type-angular" },
+    { skill: "MongoDB", level: 80, icon: "vscode-icons:file-type-mongo" },
+    { skill: "Php", level: 90, icon: "vscode-icons:file-type-php3" },
+    { skill: "Sql", level: 90, icon: "vscode-icons:file-type-mysql" },
+    { skill: "Django", level: 75, icon: "vscode-icons:file-type-django" },
+  ],
+  major_prog_skills: [
+    { skill: "Python", level: 93, icon: "vscode-icons:file-type-python" },
+    { skill: "Java", level: 85, icon: "vscode-icons:file-type-java" },
+    { skill: "C++", level: 85, icon: "vscode-icons:file-type-cpp" },
+    { skill: "C", level: 80, icon: "vscode-icons:file-type-c" },
+    { skill: "Arduino", level: 85, icon: "vscode-icons:file-type-arduino" },
+    { skill: "Raspberry Pi", level: 75, icon: "logos:raspberry-pi" },
+  ],
   bio: (
     <span>
       React addict. <br /> I have {new Date().getFullYear() - 2019 + 1} years of
