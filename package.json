@@ -8,6 +8,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@iconify/iconify": "^2.2.1",
     "@reduxjs/toolkit": "^1.8.1",
     "date-format": "^4.0.10",
     "framer-motion": "^6.3.3",
