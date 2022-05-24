@@ -1,4 +1,5 @@
 import { active_personalInfo } from "./active_personalInfo";
+import { active_sidenav_reducer } from "./active_sidenav";
 import { contactFormReducer } from "./contactForm";
 import { contacts_panel_reducer } from "./contacts_panel";
 import { education_level } from "./education_level";
@@ -7,6 +8,7 @@ import { languages_panel_reducer } from "./languages_panel";
 import { navReducer } from "./navigation";
 import { personalinfo_panel_reducer } from "./personalinfo_panel";
 import { projectsTechReducer } from "./projectsTech";
+import { selected_skills_reducer } from "./selected_skills";
 
 export default {
   navigation: navReducer,
@@ -18,4 +20,6 @@ export default {
   languages_panel: languages_panel_reducer,
   contactForm: contactFormReducer,
   projectsTech: projectsTechReducer,
+  active_sidenav: active_sidenav_reducer,
+  selected_skills: selected_skills_reducer,
 };
