@@ -10,7 +10,7 @@ export const my_data = {
     github: "http://github.com/a-belard",
     instagram: "https://www.instagram.com/belix_2.0/",
     linkedin: "https://www.linkedin.com/in/ange-belard-r-b43552228/",
-    twitter: "https://twitter.com/BelixP",
+    // twitter: "https://twitter.com/BelixP",
     facebook: "https://www.facebook.com/angebelard/",
     dribbble: "https://dribbble.com/belix-design",
   },
