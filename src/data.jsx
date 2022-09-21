@@ -133,14 +133,14 @@ export const my_data = {
       desc: "CodeAma is the best way to connect beginner coders to well experienced programmers all over the globe.",
       smallDesc: "Code Community to connect junior coders to seniors",
       tech: ["Angular"],
-      gitLink: "https://github.com/CodeAma-Group/Codeama-Frontend",
+      gitLink: "https://codeama-frontend-five.vercel.app/",
     },
     {
       name: "SparkCinema",
       desc: "SparkCinema is a reliable streaming platform for Rwandan Movies.",
       smallDesc: "A platform for streaming Rwandan Movies",
       tech: ["React"],
-      gitLink: "https://github.com/Byiringiro-saad/SparkCinema-Front-End",
+      gitLink: "https://spark-cinema.vercel.app/",
     },
     {
       name: "DailyMoney",

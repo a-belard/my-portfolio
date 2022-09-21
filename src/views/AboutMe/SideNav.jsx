@@ -33,7 +33,7 @@ export default function SideNav() {
         <i
           key={i}
           className={`${nav.icon} secondary-white ${
-            i === active_sidenav ? "opacity-80" : "opacity-40"
+            i === active_sidenav ? "opacity-80" : "opacity-40 animate-bounce"
           } cursor-pointer hover:opacity-80`}
           title={nav.title}
           onClick={(e) => dispatch(active_sidenav_actions.setActive(i))}
