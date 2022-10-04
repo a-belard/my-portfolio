@@ -4,7 +4,7 @@ export const my_data = {
   firstName: "Ange Belard",
   img: belix,
   surname: "Rutayisire",
-  proffession: "> Full-stack developer",
+  proffession: "> Front-end developer",
   github: "a-belard",
   links: {
     github: "http://github.com/a-belard",
@@ -46,7 +46,7 @@ export const my_data = {
   ],
   bio: (
     <span>
-      React addict. <br /> I have {new Date().getFullYear() - 2019 + 1} years of
+      React addict. <br /> I have {new Date().getFullYear() - 2018 + 1} years of
       experience in software development.
       <br />
       Problem-solving, inventing and coding is more of an inner peace rather
@@ -67,8 +67,8 @@ export const my_data = {
     {
       level: "High School",
       school: "Rwanda Coding Academy",
-      from: 2020,
-      to: 2023,
+      from: 2018,
+      to: 2020,
       courses: [
         "Web User Interface",
         "Fundamentals of programming (C)",
@@ -93,8 +93,8 @@ export const my_data = {
     {
       level: "Ordinary level",
       school: "Byimana School of Sciences",
-      from: 2017,
-      to: 2019,
+      from: 2014,
+      to: 2017,
       courses: [
         "ICT",
         "Maths",
@@ -110,15 +110,15 @@ export const my_data = {
       level: "Primary School",
       school:
         "Kigali Christian School(2 years) + SOS Primary School Kigali H.G (4 years)",
-      from: 2011,
-      to: 2016,
+      from: 2008,
+      to: 2014,
       courses: ["Elementary science", "Maths", "Languages", "Social studies"],
     },
     {
       level: "Nursery School",
       school: "Kigali Christian School",
-      from: 2008,
-      to: 2010,
+      from: 2005,
+      to: 2008,
       courses: ["Nursery courses"],
     },
   ],
