@@ -8,15 +8,15 @@ export const my_data = {
   github: "a-belard",
   links: {
     github: "http://github.com/a-belard",
-    instagram: "https://www.instagram.com/belix_2.0/",
+    instagram: "https://www.instagram.com/belix_3.0/",
     linkedin: "https://www.linkedin.com/in/ange-belard-r-b43552228/",
-    // twitter: "https://twitter.com/BelixP",
+    twitter: "http://twitter.com/belix_3.0",
     facebook: "https://www.facebook.com/angebelard/",
     dribbble: "https://dribbble.com/belix-design",
   },
   contacts: {
     gmail: "angebelard@gmail.com",
-    phone: "+250780578131",
+    phone: "+250788400336",
   },
   major_webdev_skills: [
     {
