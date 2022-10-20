@@ -93,7 +93,7 @@ export const my_data = {
     {
       level: "Ordinary level",
       school: "Byimana School of Sciences",
-      from: 2014,
+      from: 2015,
       to: 2017,
       courses: [
         "ICT",
@@ -110,14 +110,14 @@ export const my_data = {
       level: "Primary School",
       school:
         "Kigali Christian School(2 years) + SOS Primary School Kigali H.G (4 years)",
-      from: 2008,
+      from: 2009,
       to: 2014,
       courses: ["Elementary science", "Maths", "Languages", "Social studies"],
     },
     {
       level: "Nursery School",
       school: "Kigali Christian School",
-      from: 2005,
+      from: 2006,
       to: 2008,
       courses: ["Nursery courses"],
     },
