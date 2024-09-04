@@ -4,7 +4,7 @@ export const my_data = {
   firstName: "Ange Belard",
   img: belix,
   surname: "Rutayisire",
-  proffession: "> Front-end developer",
+  proffession: "> Fullstack developer",
   github: "a-belard",
   links: {
     github: "http://github.com/a-belard",
