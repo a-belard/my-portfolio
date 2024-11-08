@@ -46,7 +46,7 @@ export const my_data = {
   ],
   bio: (
     <span>
-      React addict. <br /> I have {new Date().getFullYear() - 2018 + 1} years of
+      React addict. <br /> I have {new Date().getFullYear() - 2021 + 1} years of
       experience in software development.
       <br />
       Problem-solving, inventing and coding is more of an inner peace rather
@@ -58,9 +58,8 @@ export const my_data = {
     "playing games",
     "reading comics",
     "listening to music",
-    "watching movies",
-    "editing photos and videos",
-    "hacking",
+    "watching anime and movies",
+    "cyber challenges",
   ],
   languages: ["English", "Kinyarwanda", "French"],
   education: [
@@ -117,7 +116,7 @@ export const my_data = {
     {
       level: "Nursery School",
       school: "Kigali Christian School",
-      from: 2006,
+      from: 2007,
       to: 2008,
       courses: ["Nursery courses"],
     },
