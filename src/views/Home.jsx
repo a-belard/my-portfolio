@@ -27,7 +27,7 @@ export default function Home() {
           className="md:w-8/12"
         />
         <p className="text-base accent-5 font-semibold text-center">
-          Small screen view under <span className="accent-2">Maintenance</span>
+          Portfolio under <span className="accent-2">Maintenance</span>.
           ...
         </p>
       </div>
